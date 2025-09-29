@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Henzon Tadlly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navegacao">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <div>
+            <img src="./img/Perfil.png" alt="Minha Foto" class="foto-perfil">
+            <h1>Henzon Tadlly</h1>
+            <p id="subtitle">Desenvolvedor Front End e Back End</p>
+        </div>
+    </main>
+
+    <section id="sobre" class="sobre reveal">
+        <h2 class="section-titulo">Sobre Mim</h2>
+        <p class="sobre-paragrafo">
+            Sou um desenvolvedor que transita com fluidez entre o back-end e o front-end, unindo a lógica complexa
+            do servidor à experiência de usuário. No back-end, minha paixão é construir a arquitetura que faz tudo
+            funcionar de forma segura e eficiente, criando a infraestrutura que dá poder às aplicações. No
+            front-end, dedico meu tempo a transformar essa funcionalidade em interfaces bonitas, intuitivas e
+            interativas.
+        </p>
+    </section>
+
+    <section id="projetos" class="projetos reveal">
+        <h2 class="section-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/Painel-Financeiro.png" alt="Findash" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto 1</h3>
+                <p class="paragrafo-projetos">
+                    Uma aplicação full-stack completa que permite aos usuários gerenciar suas finanças de forma
+                    intuitiva. O FinDash conta com um dashboard interativo, visualização de dados com gráficos, e uma
+                    funcionalidade de "importação inteligente" que simula o Open Banking para categorizar despesas
+                    automaticamente. Desenvolvido com React, Node.js, Prisma e MUI, e implantado na Vercel e Neon.
+                </p>
+
+                <div class="projeto-link-caixa">
+                    <a href="https://findash-amber.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-projeto">
+                        Ver Projeto
+                    </a>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="projeto2" alt="projeto2" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto 2</h3>
+                <p class="paragrafo-projetos">Descrição detalhada do segundo projeto.</p>
+            </div>
+            <div class="projetos-card">
+                <img src="projeto3" alt="projeto3" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto 3</h3>
+                <p class="paragrafo-projetos">Descrição detalhada do terceiro projeto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos reveal">
+        <h2 class="section-titulo">Contatos</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="nome-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite Sua Mensagem:" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn-form">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
