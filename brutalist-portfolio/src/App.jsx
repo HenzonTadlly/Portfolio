@@ -1,47 +1,28 @@
 import React from "react";
 import { ExternalLink, FolderGit2, Mail, ArrowRight } from "lucide-react";
 import minhaFoto from "./assets/minha-foto.png";
+
 const projects = [
   {
     index: "01",
     title: "Portal NovaLink",
     summary:
-      "SaaS Full-Stack desenvolvido para provedores de internet (ISPs) e Call Centers. Centraliza alertas de rede (NOC) em tempo real, base de conhecimento, escalas de atendimento e diário de bordo gerencial, otimizando o SLA e reduzindo o tempo médio de atendimento (TMA).",
+      "Projeto Full-Stack desenvolvido para provedores de internet (ISPs) e Call Centers. Centraliza alertas de rede (NOC) em tempo real, base de conhecimento, escalas de atendimento e diário de bordo gerencial, otimizando o SLA e reduzindo o tempo médio de atendimento (TMA).",
     stack: ["React", "Vite", "Node.js", "Express", "SQLite", "Tailwind"],
     year: "2026",
-    tag: "SaaS / ISP Ops",
-    link: "https://portal-novalink.vercel.app/",
+    tag: "ISP Ops",
+    link: "https://portfolio-red-beta-53.vercel.app/",
     featured: true,
   },
   {
     index: "02",
-    title: "Painel de Métricas",
-    summary:
-      "Dashboard de atendimentos, cancelamentos e avaliações com foco em leitura clara dos dados e apoio à tomada de decisão.",
-    stack: ["Python", "Pandas", "Analytics"],
-    year: "2026",
-    tag: "Data",
-    link: "#",
-  },
-  {
-    index: "03",
-    title: "Central de Chamados",
-    summary:
-      "Projeto voltado para análise de chamados e identificação de padrões operacionais, horários críticos e gargalos de atendimento.",
-    stack: ["SQL", "Python", "ETL"],
-    year: "2026",
-    tag: "Suporte",
-    link: "#",
-  },
-  {
-    index: "04",
     title: "Sistema de Agendamento",
     summary:
-      "Aplicação com autenticação por níveis, gestão de horários, notificações e fluxo pensado para uso real em serviços e atendimento.",
+      "Projeto full-stack desenvolvido com Python, Django, HTML, CSS e JavaScript, focado na criação de um sistema real de agendamento entre clientes e prestadores. A aplicação possui autenticação com perfis distintos, upload de foto de perfil, definição de serviços oferecidos, criação e gerenciamento de agendamentos, bloqueio de conflitos de horário, regras de negócio por tipo de usuário, avaliações de atendimento e dashboards personalizados com métricas e histórico de uso.",
     stack: ["React", "Django", "PostgreSQL"],
     year: "2026",
     tag: "Web App",
-    link: "#",
+    link: "https://sistema-agendamento-borc.onrender.com",
   },
 ];
 
@@ -53,7 +34,6 @@ const technologies = [
   "Node.js",
   "PostgreSQL",
   "SQL",
-  "Pandas",
   "REST API",
   "Git",
 ];
@@ -86,7 +66,7 @@ function SectionTitle({ eyebrow, title, description }) {
 
 function InfoTag({ children }) {
   return (
-    <span className="rounded-full border border-zinc-800 bg-zinc-950/80 px-3 py-2 text-xs font-medium text-zinc-300">
+    <span className="rounded-full border border-zinc-700/80 bg-gradient-to-b from-zinc-900 to-zinc-950 px-3 py-2 text-xs font-medium text-zinc-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition hover:border-lime-400/40 hover:text-lime-400">
       {children}
     </span>
   );
@@ -119,7 +99,7 @@ export default function App() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <div>
             <div className="text-sm font-semibold tracking-wide text-white">
-              Seu Nome
+              Henzon Tadlly
             </div>
             <div className="text-xs text-zinc-500">Full-Stack Developer</div>
           </div>
@@ -151,7 +131,9 @@ export default function App() {
                 Desenvolvedor full-stack com foco em sistemas web, dados e produto.
               </h1>
               <p className="mt-6 max-w-2xl text-sm leading-7 text-zinc-400 md:text-base">
-                Este portfólio reúne projetos que mostram minha evolução em desenvolvimento web, integração entre backend e frontend, análise de dados e construção de soluções voltadas para problemas reais.
+                Este portfólio reúne projetos que mostram minha evolução em
+                desenvolvimento web, integração entre backend e frontend, análise
+                de dados e construção de soluções voltadas para problemas reais.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -169,20 +151,23 @@ export default function App() {
               </div>
               <div className="space-y-3 text-sm text-zinc-400">
                 <div>
-                  <span className="text-zinc-200">Foco:</span> desenvolvimento full-stack e soluções para problemas reais
+                  <span className="text-zinc-200">Foco:</span> desenvolvimento
+                  full-stack e soluções para problemas reais
                 </div>
                 <div>
-                  <span className="text-zinc-200">Base:</span> web apps, APIs, dashboards e automações
+                  <span className="text-zinc-200">Base:</span> web apps, APIs,
+                  dashboards e automações
                 </div>
                 <div>
-                  <span className="text-zinc-200">Objetivo:</span> crescer como desenvolvedor construindo projetos sólidos e úteis
+                  <span className="text-zinc-200">Objetivo:</span> crescer como
+                  desenvolvedor construindo projetos sólidos e úteis
                 </div>
               </div>
 
               <div className="mt-6 grid grid-cols-2 gap-3">
                 <div className="rounded-xl border border-zinc-800 bg-black/30 p-4">
                   <div className="text-xs text-zinc-500">Projetos</div>
-                  <div className="mt-1 text-2xl font-bold text-white">04</div>
+                  <div className="mt-1 text-2xl font-bold text-white">02</div>
                 </div>
                 <div className="rounded-xl border border-zinc-800 bg-black/30 p-4">
                   <div className="text-xs text-zinc-500">Stack</div>
@@ -207,19 +192,26 @@ export default function App() {
                   <img
                     src={minhaFoto}
                     alt="Foto de perfil"
-                    className="h-full w-full rounded-xl object-cover grayscale"
+                    className="h-full w-full rounded-xl object-cover"
                   />
                 </div>
               </div>
 
               <div>
                 <p className="text-sm leading-8 text-zinc-400 md:text-base">
-                  Sou desenvolvedor full-stack com interesse em criar aplicações que combinem boa estrutura de código, interface organizada e utilidade prática. Tenho buscado evoluir principalmente em projetos que envolvem sistemas web, dashboards, integrações e análise de dados, sempre tentando transformar necessidades reais em soluções funcionais.
+                  Sou desenvolvedor full-stack com interesse em criar aplicações
+                  que combinem boa estrutura de código, interface organizada e
+                  utilidade prática. Tenho buscado evoluir principalmente em
+                  projetos que envolvem sistemas web, dashboards, integrações e
+                  análise de dados, sempre tentando transformar necessidades reais
+                  em soluções funcionais.
                 </p>
 
                 <div className="mt-10 grid gap-8 lg:grid-cols-2">
                   <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-6">
-                    <h3 className="mb-4 text-lg font-semibold text-white">Tecnologias</h3>
+                    <h3 className="mb-4 text-lg font-semibold text-white">
+                      Tecnologias
+                    </h3>
                     <div className="flex flex-wrap gap-2">
                       {technologies.map((item) => (
                         <InfoTag key={item}>{item}</InfoTag>
@@ -228,7 +220,9 @@ export default function App() {
                   </div>
 
                   <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-6">
-                    <h3 className="mb-4 text-lg font-semibold text-white">Especialidades</h3>
+                    <h3 className="mb-4 text-lg font-semibold text-white">
+                      Especialidades
+                    </h3>
                     <ul className="space-y-3 text-sm leading-7 text-zinc-400 md:text-base">
                       {specialties.map((item) => (
                         <li key={item}>• {item}</li>
@@ -253,11 +247,13 @@ export default function App() {
               {projects.map((project) => (
                 <article
                   key={project.index}
-                  className={`group rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-950 to-zinc-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-lime-400/50 ${
+                  className={`group relative overflow-hidden rounded-3xl border border-zinc-800 bg-gradient-to-br from-zinc-950 via-zinc-900 to-black p-6 shadow-[0_10px_30px_rgba(0,0,0,0.28)] transition duration-300 hover:-translate-y-1.5 hover:border-lime-400/45 ${
                     project.featured ? "md:col-span-2" : ""
                   }`}
                 >
-                  <div className="flex items-start justify-between gap-4">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(163,230,53,0.08),transparent_35%)] opacity-0 transition duration-300 group-hover:opacity-100" />
+
+                  <div className="relative z-10 flex items-start justify-between gap-4">
                     <div>
                       <div className="inline-flex rounded-full border border-lime-400/20 bg-lime-400/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-lime-400">
                         {project.tag}
@@ -266,20 +262,22 @@ export default function App() {
                         {project.title}
                       </h3>
                     </div>
-                    <div className="text-xs text-zinc-500">{project.year}</div>
+                    <div className="rounded-full border border-zinc-800 bg-zinc-950/80 px-3 py-1 text-xs text-zinc-500">
+                      {project.year}
+                    </div>
                   </div>
 
-                  <p className="mt-4 max-w-3xl text-sm leading-7 text-zinc-400 md:text-base">
+                  <p className="relative z-10 mt-5 max-w-3xl text-sm leading-7 text-zinc-400 md:text-base">
                     {project.summary}
                   </p>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
+                  <div className="relative z-10 mt-6 flex flex-wrap gap-2">
                     {project.stack.map((item) => (
                       <InfoTag key={item}>{item}</InfoTag>
                     ))}
                   </div>
 
-                  <div className="mt-6 flex flex-wrap gap-3">
+                  <div className="relative z-10 mt-8 flex flex-wrap gap-3">
                     <ButtonLink href={project.link} blank variant="primary">
                       <ExternalLink className="h-4 w-4" /> Acessar projeto
                     </ButtonLink>
@@ -298,11 +296,22 @@ export default function App() {
               description="Conjunto de ferramentas e tecnologias com as quais venho desenvolvendo meus projetos."
             />
 
-            <div className="rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-950 to-zinc-900 p-6">
-              <div className="flex flex-wrap gap-3">
-                {technologies.map((item) => (
-                  <InfoTag key={item}>{item}</InfoTag>
-                ))}
+            <div className="relative overflow-hidden rounded-3xl border border-zinc-800 bg-gradient-to-br from-zinc-950 via-zinc-900 to-black p-6 shadow-[0_10px_30px_rgba(0,0,0,0.24)]">
+              <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-lime-400/10 blur-3xl" />
+
+              <div className="relative z-10">
+                <div className="mb-5 flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-lime-400" />
+                  <span className="text-sm font-semibold text-white">
+                    Minha stack principal
+                  </span>
+                </div>
+
+                <div className="flex flex-wrap gap-3">
+                  {technologies.map((item) => (
+                    <InfoTag key={item}>{item}</InfoTag>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -316,14 +325,14 @@ export default function App() {
               description="Caso queira conhecer melhor meus projetos, trocar ideias ou falar sobre oportunidades, estes são meus canais."
             />
 
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-4">
               <div className="rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-950 to-zinc-900 p-5 transition hover:border-lime-400/40">
                 <div className="mb-3 text-sm font-semibold text-white">Email</div>
                 <a
-                  href="mailto:tadllyhenzon@gmail.coms"
+                  href="mailto:tadllyhenzon@gmail.com"
                   className="inline-flex items-center gap-2 text-sm text-zinc-300 transition hover:text-lime-400"
                 >
-                  <Mail className="h-4 w-4" /> tadllyhenzon@gmail.coms
+                  <Mail className="h-4 w-4" /> tadllyhenzon@gmail.com
                 </a>
               </div>
 
@@ -331,9 +340,11 @@ export default function App() {
                 <div className="mb-3 text-sm font-semibold text-white">GitHub</div>
                 <a
                   href="https://github.com/HenzonTadlly"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-zinc-300 transition hover:text-lime-400"
                 >
-                  <FolderGit2 className="h-4 w-4" /> Ver perfil
+                  <FolderGit2 className="h-4 w-4" /> github.com/HenzonTadlly
                 </a>
               </div>
 
@@ -341,9 +352,23 @@ export default function App() {
                 <div className="mb-3 text-sm font-semibold text-white">LinkedIn</div>
                 <a
                   href="https://www.linkedin.com/in/henzon"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-zinc-300 transition hover:text-lime-400"
                 >
-                  <ExternalLink className="h-4 w-4" /> Acessar LinkedIn
+                  <ExternalLink className="h-4 w-4" /> linkedin.com/in/henzon
+                </a>
+              </div>
+
+              <div className="rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-950 to-zinc-900 p-5 transition hover:border-lime-400/40">
+                <div className="mb-3 text-sm font-semibold text-white">WhatsApp</div>
+                <a
+                  href="https://wa.me/5589988162522"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-zinc-300 transition hover:text-lime-400"
+                >
+                  <ExternalLink className="h-4 w-4" /> (89) 98816-2522
                 </a>
               </div>
             </div>
